@@ -8,9 +8,10 @@ public class Arrays {
         array[1] =40;
         array[2] =9;
         array[3] =16;
-        array[4] =30;
+        array[4] =50;
        // lengthOfArray(array);
-        reverseArray(array);
+       //  reverseArray(array);
+        maxValueFromArray(array);
 
     }
 
@@ -42,13 +43,14 @@ public class Arrays {
     //Find the maximum value in the array
     public static void maxValueFromArray(int[] arr) {
         System.out.println("=========== using for each loop=========");
-        for (int i = 0; i < arr.length; i++) {
-            int k = 0;
-           int temp = arr[i];
-           arr[i] = k;
-           k = temp;
+       int max = arr[0];
 
-        }
+       for (int i=1; i < arr.length; i++){
+         if  (arr[i] > max) {
+             max = arr[i];
+           }
+       }
+        System.out.println(max);
     }
 
     //check if array contains a given number
