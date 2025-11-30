@@ -11,7 +11,8 @@ public class Arrays {
         array[4] =50;
        // lengthOfArray(array);
        //  reverseArray(array);
-        maxValueFromArray(array);
+        // maxValueFromArray(array);
+        containsGivenNumber(array,50);
 
     }
 
@@ -54,4 +55,13 @@ public class Arrays {
     }
 
     //check if array contains a given number
+    public static void containsGivenNumber(int[] arr, int n){
+        for ( int j=0; j < arr.length; j++){
+            if ( arr[j] == n){
+                System.out.println("Array contains given number :"+ n);
+                return;
+            }
+        }
+        System.out.println("Array does not contains given number :");
+    }
 }
