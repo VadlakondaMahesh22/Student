@@ -64,7 +64,4 @@ public class Arrays {
         }
         System.out.println("Array does not contains given number :");
     }
-
-
-    // find my changes :
 }
